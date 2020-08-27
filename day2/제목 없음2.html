@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+ <head>
+ <!-- 스타일시트를 적용하는 방법은 2가지가 있음
+	1.인라인 방식: 해당 태그에 직접 명시하는 방식. 적용대상이 많을 경우 효율성이 떨어짐.
+	2.임베디드 방식: style 태그에 일괄적용하는 방식
+		-문법형식: 어떤 태그를 대상으로 어떠한 처리를 할지를 표현하면 된다..
+			td{font-size:9pt-->
+<style>
+/*아래와 같은 문법형식에서 대상을 가리켜 선택자라 한다.*/
+td{
+	font-size: 9pt;
+	background:yellow;
+}
+table{
+border:20px solid red;
+}
+input{
+	background:dodgerblue;
+	color:white;
+}
+select{
+	background:green;
+	color:white;
+}
+#namecol {
+	background:pink;
+}
+body{
+	 background:black;
+}
+</style>
+  <meta charset="UTF-8"> 
+  <title>Document</title>
+ </head>
+ <body>
+  <table border="2px" width="600px" align="center">
+	<tr>
+		<td colspan="2" align="center">회원가입</td>	
+	</tr>
+  	<tr>
+		<td>ID</td>
+		<td><input type="text" placeholder="ID"/></td>
+	</tr>
+	<tr>
+		<td>Pass</td>
+		<td><input type="password" placeholder="PASSWORD"/></td>
+	</tr>
+	<tr>
+		<td>Name</td>
+		<td><input type="text" placeholder="Name" id="namecol"/></td>
+	</tr>  	
+  	<tr>
+		<td>연락처</td>
+		<td>
+			<select>
+				<option>010</option>
+				<option>011</option>
+				<option>017</option>
+				<option>019</option>
+			</select>
+			-<input type="text" placeholder="앞자리" size="5"/>
+			-<input type="text" placeholder="뒷자리" size="5"/>
+		</td>
+	</tr>
+	<tr>
+		<td>취미</td>
+		<td>
+			여행<input type="checkbox"/>
+			독서<input type="checkbox"/>
+			운동<input type="checkbox"/>
+			게임<input type="checkbox"/>
+		</td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td>
+			<input type="text" placeholder="메일 아이디"/>@
+			<select>
+				<option>네이버</option>
+				<option>카카오</option>
+				<option>구글</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td>메일수신</td>
+		<td>
+			예<input type="radio" name="receive"/>
+			아니오<input type="radio" name="receive"/>
+		</td>
+	</tr>
+	<tr>
+		<td>우편번호</td>
+		<td>
+			<input type="text" placeholder="우편번호" size="5" readonly/>
+			<button>우편번호 검색</button>
+		</td>
+	</tr>
+
+  	<tr>
+		<td colspan="2" align="center">
+			<button>가입하기</button>
+		</td>
+	</tr>
+  </table>
+ </body>
+</html>
