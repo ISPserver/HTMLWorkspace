@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> 
+<title>Document</title>
+<style>
+#box{
+	width:100px;
+	height:100px;
+	background: red;
+	position:absolute; /*부모 요소를 기준으로 나의 위치를 결정하는법: 여기서 부모는 body*/
+	left:0px;
+	top:400px;
+	border-radius:50%;
+	/*이 CSS가 사용하게될 애니메이션 프레임 이름*/
+	animation-name:aniBg;
+	animation-duration: 4s;
+	animation-iteration-count: infinite; /*실행횟수*/
+	animation-direction:alternate;/*반복방식을 번갈아가면서 하도록*/
+}
+#box2{
+	width:100px;
+	height:50px;
+	background:black;
+	position:absolute; /*부모 요소를 기준으로 나의 위치를 결정하는법: 여기서 부모는 body*/
+	left:0px;
+	top:500px;
+	border-radius:50%;
+	animation-name:aniBg2;
+	animation-duration: 4s;
+	animation-iteration-count:infinite; /*실행횟수*/
+	animation-direction:alternate;/*반복방식을 번갈아가면서 하도록*/
+}
+#line{
+	position:absolute;
+	left:0px;	
+	top:500px;
+	width:100%;
+	border:2px solid black;
+}
+/*애니메이션 프레임 정의*/
+@keyframes aniBg{
+	0%{left:0px; top:400px;}
+	15%{left:250px; top:0px;}
+	30%{left:500px; top:400px;}
+	45%{left:750px; top:0px;}
+	60%{left:1000px; top:400px;}	
+	75%{left:1200px; top:0px;}
+	100%{left:1450px; top:400px;}
+}
+
+@keyframes aniBg2{
+	0%{left:0px; top:500px; width:100px; height:50px;}
+	15%{left:250px; width:50px; height:30px;}
+	30%{left:500px; width:100px; height:50px;}
+	45%{left:750px; width:50px; height:30px;}
+	60%{left:1000px; width:100px; height:50px;}		
+	75%{left:1200px; width:50px; height:30px;}		
+	100%{left:1450px; width:100px; height:50px;}		
+}
+</style>
+</head>
+<body>
+	<div id="box">
+		<img src="../images/ball.png" width="100px" height="100px"/>
+	</div>
+	<div id="box2"></div>
+	<div id="line"></div>
+</body>
+</html>
