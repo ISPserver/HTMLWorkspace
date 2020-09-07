@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습</title>
+  <style>
+    div{
+      display: inline-block;
+    }
+    #img1{
+      background: url(https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png);
+      background-size: 200px 200px;
+      width: 200px;
+      height: 200px;
+    }
+    #mask1{
+      width: 200px;
+      height: 200px;
+      background: black;
+    }
+    #img1:hover #mask1{
+      animation: opac 1s linear forwards;
+    }
+
+    #img2{
+      background: url(https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png);
+      background-size: 200px 200px;
+      width: 200px;
+      height: 200px;
+      transform: scaleX(-1);
+    }    
+    #mask2{
+      width: 200px;
+      height: 200px;
+      background: black;
+    }
+    #img2:hover #mask2{
+      animation: opac 1s linear forwards;      
+    }
+    @keyframes opac{
+      from{ opacity: 1;}
+      to{ opacity: 0.5;}
+    }
+  </style>
+</head>
+<body>
+  <div id="img1">
+  <div id="mask1"></div>  
+  </div>
+
+  <div id="img2">
+    <div id="mask2"></div>  
+  </div>
+    
+</body>
+</html>

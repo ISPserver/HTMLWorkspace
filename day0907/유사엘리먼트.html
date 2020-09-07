@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p:first-child{
+      color: blue;
+      font-weight: bold;
+    }
+    div::first-line{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!--유사클래스와 비슷한 개념인 유사엘리먼트를 학습-->
+  <!--
+    유사클래스: 실제 아이디,이름,태그명이 아닌 요소의 상태(동작)
+              로도 가리키는 방법을 제공,selector의 확장...
+    유사엘리먼트: 문서내의 요소를 가리킬때, 그 요소의 순서,위치등으로
+              가리키는 방법을 제공,,selector의 확장
+    유사클래스와 유사엘리먼트는 어떻게 구분하는가?
+    CSS3부터는 유사엘리먼트에는 ::(더블클론)을 이용
+    *결론 -> 문서내의 요소를 가리키는 방법을 다양하게 지원하기 위한
+    selector의 확장이다.
+  -->
+  <p>I'm first element</p>
+  <p>I'm second element</p>
+  <p>I'm three element</p>
+
+  <div>dsfsfdsfasfsfsf</div>
+</body>
+</html>
