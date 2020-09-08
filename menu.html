@@ -1,97 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="euc-kr"> 
-<title>Document</title>
-<style>
-/*¸Ş´ºµéÀ» ¹­¾î³õÀ» ¹Ú½º¿¡ ´ëÇÑ Å¬·¡½º Á¤ÀÇ*/
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-.dropdown {
-  position: relative;
-  display: block;
-  margin-bottom: 30px;
-}
-.menu{
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-}
-/*¼±ÅÃÀÚ´Â Á¶ÇÕÇÏ¿© »ç¿ë°¡´É. ¼±ÅÃÀÚ µÚ¿¡ ÇÑÄ­ ¶ç¿ì¸é ÇÏÀ§ ¿ä¼Ò¸¦ ÀÇ¹Ì*/
-.menu a{
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-} 
-/*À¯»çÅ¬·¡½º¸¦ ÀÌ¿ëÇÏ¿© ¸µÅ©¿¡ ¸¶¿ì½º ¿Ã·Á³õÀ¸¸é ¹è°æ»ö ¹Ù²Ù±â*/
-.menu a:hover {background-color: #ddd;}
-.dropdown:hover .menu {display: block;}
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-.menu a:hover{
-	background-color:#cccccc;
-}
-</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/*ï¿½Ş´ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+		.dropbtn {
+			background-color: #4CAF50;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+		}
+		.dropdown {
+			position: relative;
+			display: block;
+			margin-bottom: 30px;
+		}
+		.menu{
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+		/*ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ë°¡ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú¿ï¿½ ï¿½ï¿½Ä­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ò¸ï¿½ ï¿½Ç¹ï¿½*/
+		.menu a{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		} 
+		/*ï¿½ï¿½ï¿½ï¿½Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ì½º ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²Ù±ï¿½*/
+		.menu a:hover {background-color: #ddd;}
+		.dropdown:hover .menu {display: block;}
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+		
+		.menu a:hover{
+			background-color:#cccccc;
+		}
+		</style>
+		</head>
+		<body>
+			<div class="dropdown">
+				<button class="dropbtn">1ì¼ì°¨</button>
+				<div class="menu">
+					<a href="./day1/dummy.html" target="myframe">dummy</a>
+					<a href="./day1/index.html" target="myframe">index</a>
+					<a href="./day1/memo.txt" target="myframe">memo</a>
+					<a href="./day1/ê²Œì‹œíŒ.html" target="myframe">ê²Œì‹œíŒ</a>
+					<a href="./day1/ë¡œê·¸ì¸ëª… ë§Œë“¤ê¸°.html" target="myframe">ë¡œê·¸ì¸ëª… ë§Œë“¤ê¸°</a>
+					<a href="./day1/ì…€í•©ì¹˜ê¸°.html" target="myframe">ì…€í•©ì¹˜ê¸°</a>
+					<a href="./day1/í…Œì´ë¸”ê¸°ì´ˆ.html" target="myframe">í…Œì´ë¸”ê¸°ì´ˆ</a>
+					<a href="./day1/íšŒì›ê°€ì….html" target="myframe">íšŒì›ê°€ì…</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">2ì¼ì°¨</button>
+				<div class="menu">
+					<a href="./day2/blockì˜ ì´í•´.html" target="myframe">blockì˜ ì´í•´</a>
+					<a href="./day2/Borderí•™ìŠµ.html" target="myframe">Borderí•™ìŠµ</a>
+					<a href="./day2/CSSìƒ‰ìƒ.html" target="myframe">CSSìƒ‰ìƒ</a>
+					<a href="./day2/ê³¼ì œí’€ì´.html" target="myframe">ê³¼ì œí’€ì´</a>
+					<a href="./day2/ê³¼ì œí’€ì´2.html" target="myframe">ê³¼ì œí’€ì´2</a>
+					<a href="./day2/ë ˆì´ì•„ì›ƒ.html" target="myframe">ë ˆì´ì•„ì›ƒ</a>
+					<a href="./day2/ë°°ê²½ì²˜ë¦¬.html" target="myframe">ë°°ê²½ì²˜ë¦¬</a>
+					<a href="./day2/ìœ„ì¹˜ì†ì„±.html" target="myframe">ìœ„ì¹˜ì†ì„±</a>
+					<a href="./day2/í™ˆí”¼.html" target="myframe">í™ˆí”¼</a>
+					<a href="./day2/íšŒì›ê°€ì….html" target="myframe">íšŒì›ê°€ì…</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">3ì¼ì°¨</button>
+				<div class="menu">
+					<a href="./day3/ë™ì˜ìƒ.html" target="myframe">ë™ì˜ìƒ</a>
+					<a href="./day3/ë ˆì´ì•„ì›ƒ.html" target="myframe">ë ˆì´ì•„ì›ƒ</a>
+					<a href="./day3/ë©”ëª¨.txt" target="myframe">ë©”ëª¨</a>
+					<a href="./day3/ë°•ìŠ¤ëª¨ë¸.html" target="myframe">ë°•ìŠ¤ëª¨ë¸</a>
+					<a href="./day3/ë³€í˜•.html" target="myframe">ë³€í˜•</a>
+					<a href="./day3/ì•„ì´í”„ë ˆì„.html" target="myframe">ì•„ì´í”„ë ˆì„</a>
+					<a href="./day3/ì• ë‹ˆë©”ì´ì…˜.html" target="myframe">ì• ë‹ˆë©”ì´ì…˜</a>
+					<a href="./day3/ì¸ë¼ì¸ë¸”ëŸ­.html" target="myframe">ì¸ë¼ì¸ë¸”ëŸ­</a>
+					<a href="./day3/ì¢Œìš°í”„ë ˆì„.html" target="myframe">ì¢Œìš°í”„ë ˆì„</a>
+					<a href="./day3/íŠ¸ë Œì§€ì…˜.html" target="myframe">íŠ¸ë Œì§€ì…˜</a>
+					<a href="./day3/navi.html" target="myframe">navi</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">4ì¼ì°¨</button>
+				<div class="menu">
+					<a href="./day0907/ë¡œë”©ë°”.html" target="myframe">ë¡œë”©ë°”</a>
+					<a href="./day0907/ì‹¤ìŠµ.html" target="myframe">ì‹¤ìŠµ</a>
+					<a href="./day0907/ìœ ì‚¬ì—˜ë¦¬ë¨¼íŠ¸.html" target="myframe">ìœ ì‚¬ì—˜ë¦¬ë¨¼íŠ¸</a>
+					<a href="./day0907/ìœ ì‚¬í´ë˜ìŠ¤.html" target="myframe">ìœ ì‚¬í´ë˜ìŠ¤</a>
+					<a href="./day0907/ì´ë¯¸ì§€flip.html" target="myframe">ì´ë¯¸ì§€flip</a>
+					<a href="./day0907/íˆ¬ëª…ë„.html" target="myframe">íˆ¬ëª…ë„</a>
+					<a href="./day0907/í™”ì‚´í‘œí‘œí˜„í•˜ê¸°.html" target="myframe">í™”ì‚´í‘œí‘œí˜„í•˜ê¸°</a>
+					<a href="./day0907/boxì‚¬ì´ì§•.html" target="myframe">boxì‚¬ì´ì§•</a>
+				</div>
+			</div>
+		</body>
+		</html>
+		
 </head>
 <body>
-	<div class="dropdown">
-	  <button class="dropbtn">1ÀÏÂ÷</button>
-		<div class="menu">
-			<a href="./day1/dummy.html" target="myframe">dummy</a>
-			<a href="./day1/index.html" target="myframe">index</a>
-			<a href="./day1/memo.txt" target="myframe">memo</a>
-			<a href="./day1/°Ô½ÃÆÇ.html" target="myframe">°Ô½ÃÆÇ</a>
-			<a href="./day1/·Î±×ÀÎ¸í ¸¸µé±â.html" target="myframe">·Î±×ÀÎ¸í ¸¸µé±â</a>
-			<a href="./day1/¼¿ÇÕÄ¡±â.html" target="myframe">¼¿ÇÕÄ¡±â</a>
-			<a href="./day1/Å×ÀÌºí±âÃÊ.html" target="myframe">Å×ÀÌºí±âÃÊ</a>
-			<a href="./day1/È¸¿ø°¡ÀÔ.html" target="myframe">È¸¿ø°¡ÀÔ</a>
-		</div>
-	</div>
-	<div class="dropdown">
-	  <button class="dropbtn">2ÀÏÂ÷</button>
-		<div class="menu">
-			<a href="./day2/blockÀÇ ÀÌÇØ.html" target="myframe">blockÀÇ ÀÌÇØ</a>
-			<a href="./day2/BorderÇĞ½À.html" target="myframe">BorderÇĞ½À</a>
-			<a href="./day2/CSS»ö»ó.html" target="myframe">CSS»ö»ó</a>
-			<a href="./day2/°úÁ¦Ç®ÀÌ.html" target="myframe">°úÁ¦Ç®ÀÌ</a>
-			<a href="./day2/°úÁ¦Ç®ÀÌ2.html" target="myframe">°úÁ¦Ç®ÀÌ2</a>
-			<a href="./day2/·¹ÀÌ¾Æ¿ô.html" target="myframe">·¹ÀÌ¾Æ¿ô</a>
-			<a href="./day2/¹è°æÃ³¸®.html" target="myframe">¹è°æÃ³¸®</a>
-			<a href="./day2/À§Ä¡¼Ó¼º.html" target="myframe">À§Ä¡¼Ó¼º</a>
-			<a href="./day2/È¸¿ø°¡ÀÔ.html" target="myframe">È¸¿ø°¡ÀÔ</a>
-			<a href="./day2/È¨ÇÇ.html" target="myframe">È¨ÇÇ</a>
-		</div>
-	</div>
-	<div class="dropdown">
-	  <button class="dropbtn">3ÀÏÂ÷</button>
-		<div class="menu">
-			<a href="./day3/·¹ÀÌ¾Æ¿ô.html" target="myframe">·¹ÀÌ¾Æ¿ô ÇĞ½À</a>
-			<a href="./day3/ÀÎ¶óÀÎºí·°.html" target="myframe">inline-block</a>
-			<a href="./day3/¹Ú½º¸ğµ¨.html" target="myframe">Box ¸ğµ¨</a>
-			<a href="./day3/Æ®·£Áö¼Ç.html" target="myframe">Transition(ÀüÀÌ,º¯È­)</a>
-			<a href="./day3/µ¿¿µ»ó.html" target="myframe">µ¿¿µ»ó Á¦¾î</a>
-			<a href="./day3/¾Ö´Ï¸ŞÀÌ¼Ç.html" target="myframe">¾Ö´Ï¸ŞÀÌ¼Ç</a>
-			<a href="./day3/º¯Çü.html" target="myframe">Transform(º¯Çü)</a>
-		</div>
-	</div>
-	<div class="dropdown">
-	  <button class="dropbtn">4ÀÏÂ÷</button>
-		<div class="menu">
-			<a href="./day3/·¹ÀÌ¾Æ¿ô.html" target="myframe">·¹ÀÌ¾Æ¿ô ÇĞ½À</a>
-			<a href="./day3/ÀÎ¶óÀÎºí·°.html" target="myframe">inline-block</a>
-			<a href="./day3/¹Ú½º¸ğµ¨.html" target="myframe">Box ¸ğµ¨</a>
-			<a href="#">CSS¾Ö´Ï¸ŞÀÌ¼Ç</a>
-			<a href="./day3/µ¿¿µ»ó.html" target="myframe">µ¿¿µ»ó Á¦¾î</a>
-		</div>
-	</div>
+	
 </body>
 </html>
